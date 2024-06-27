@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="ShareHost - Neighbor Car Sharing" />
+    <meta name="author" content="Devcrud" />
+    <title>ShareHost - Neighbor Car Sharing</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"
+      href="http://127.0.0.1:5500/contact.html"
+      href="http://127.0.0.1:5500/register.html"
+      href="http://127.0.0.1:5500/findneightbor.html"
+    />
+
+    <style>
+      body {
+        background-color: #f0f0f0;
+      }
+      .container {
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 20px;
+      }
+      nav {
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 10px;
+      }
+      nav a {
+        color: white;
+      }
+      footer {
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+        padding: 10px;
+        text-align: center;
+      }
+    </style>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-EQYV0LLYDF"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-EQYV0LLYDF");
+    </script>
+  </head>
+  <body>
+    <nav class="container-fluid">
+      <ul>
+        <li><strong>ShareHost</strong></li>
+      </ul>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#vehicle-registration">Register Vehicle</a></li>
+        <li><a href="#find-neighbors">Find Neighbors</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main class="container">
+      <section id="home">
+        <h2>Welcome to ShareHost</h2>
+        <p>
+          Discover a new way to share cars within your neighborhood. We believe
+          that sharing brings us closer and makes our community happier.
+        </p>
+        <img
+          src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+          alt="Person Driving"
+          style="width: 100%; border-radius: 10px"
+        />
+      </section>
+
+      <section id="vehicle-registration">
+        <h2>Register Your Vehicle</h2>
+        <form id="registration-form">
+          <input
+            type="text"
+            placeholder="Vehicle Make"
+            list="car-brands"
+            required
+          />
+          <datalist id="car-brands">
+            <option value="Hyundai"></option>
+            <option value="Kia"></option>
+            <option value="Chevrolet"></option>
+            <option value="Ford"></option>
+            <option value="Tesla"></option>
+          </datalist>
+
+          <input type="text" placeholder="Vehicle Model" required />
+          <input type="number" placeholder="Year" required />
+          <input
+            type="number"
+            placeholder="Set Price ($1-$900)"
+            min="1"
+            max="900"
+          />
+          <label
+            ><input type="checkbox" id="customPrice" name="customPrice" /> Allow
+            negotiable price</label
+          >
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+
+      <section id="find-neighbors">
+        <h2>Find Your Neighbors</h2>
+        <p>Enter your address to see nearby ShareHost vehicles:</p>
+        <input type="text" placeholder="Your Address" />
+        <button>Find Now</button>
+      </section>
+
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <p>
+          If you have any questions or need more information, please email us at
+          <a href="mailto:ho8949607@gmail.com">ho8949607@gmail.com</a>.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2024 ShareHost. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

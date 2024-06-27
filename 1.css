@@ -1,0 +1,50 @@
+body {
+  background-color: #f0f0f0;
+}
+.container {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+nav {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+nav a.active {
+  background-color: rgba(255, 255, 255, 0.3);
+  font-weight: bold;
+}
+#vehicle-registration ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+#vehicle-registration li:before {
+  content: "✓ ";
+  color: #4caf50;
+}
+#registration-form {
+  margin-top: 20px;
+}
+#registration-form input,
+#registration-form select,
+#registration-form button {
+  margin-bottom: 10px;
+}
+footer {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  margin-top: 20px;
+}
